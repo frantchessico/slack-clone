@@ -70,7 +70,7 @@ function Sidebar() {
             <hr/>
             <SidebarOptions Icon={ AddIcon }  title="Channel" />
             {channels.map(channel => (
-                <SidebarOptions title={channel.name} id={channel.id}></SidebarOptions>
+                <SidebarOptions title={channel.name} key={channel.id}></SidebarOptions>
             ))}
         </div>
     )
